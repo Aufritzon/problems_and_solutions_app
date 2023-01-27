@@ -16,15 +16,17 @@ using System.Windows.Shapes;
 namespace problems_and_solutions_app
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserView : UserControl
     {
-        public MainWindow()
+        public UserView(string username)
         {
             InitializeComponent();
-            DataContext = ViewModelLocator.MainViewModel;
-
+            DataContext = new UserViewModel(username);
         }
+
+
+
     }
 }

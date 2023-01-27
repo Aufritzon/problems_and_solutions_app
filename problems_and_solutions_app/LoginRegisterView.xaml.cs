@@ -16,15 +16,16 @@ using System.Windows.Shapes;
 namespace problems_and_solutions_app
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginRegisterPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginRegisterView : UserControl
     {
-        public MainWindow()
+        public LoginRegisterView()
         {
             InitializeComponent();
-            DataContext = ViewModelLocator.MainViewModel;
-
+            DataContext  = new LoginRegisterViewModel();
         }
+
+
     }
 }

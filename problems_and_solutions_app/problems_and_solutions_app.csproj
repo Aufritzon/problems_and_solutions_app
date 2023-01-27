@@ -7,4 +7,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="MvvmLightLibs" Version="5.4.1.1" />
+    <PackageReference Include="MySqlConnector" Version="2.2.5" />
+  </ItemGroup>
+
 </Project>

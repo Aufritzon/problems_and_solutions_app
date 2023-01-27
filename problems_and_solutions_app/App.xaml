@@ -4,6 +4,20 @@
              xmlns:local="clr-namespace:problems_and_solutions_app"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <Style TargetType="Button">
+            <Setter Property="Padding" Value="10 5"/>
+        </Style>
+
+
+        <Style TargetType="TextBox">
+            <Setter Property="Padding" Value="2" />
+        </Style>
+
+        <Style TargetType="PasswordBox">
+            <Setter Property="Padding" Value="2"/>
+
+        </Style>
+
     </Application.Resources>
 </Application>

@@ -16,15 +16,22 @@ using System.Windows.Shapes;
 namespace problems_and_solutions_app
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginPage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class LoginView : UserControl
     {
-        public MainWindow()
+        public LoginView()
         {
             InitializeComponent();
-            DataContext = ViewModelLocator.MainViewModel;
+            DataContext = new LoginViewModel();
+        }
 
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (DataContext != null)
+            { 
+                ((dynamic) DataContext).Password = ((PasswordBox)sender).Password; 
+            }
         }
     }
 }
